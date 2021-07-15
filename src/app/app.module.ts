@@ -17,6 +17,11 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { LockOutline, UserOutline } from '@ant-design/icons-angular/icons';
+import { IconDefinition } from '@ant-design/icons-angular';
+
+const icons: IconDefinition[] = [LockOutline, UserOutline];
 
 registerLocaleData(es);
 
@@ -35,6 +40,7 @@ registerLocaleData(es);
     NzFormModule,
     NzButtonModule,
     NzInputModule,
+    NzIconModule.forRoot(icons),
   ],
   providers: [{ provide: NZ_I18N, useValue: es_ES }],
   bootstrap: [AppComponent],
