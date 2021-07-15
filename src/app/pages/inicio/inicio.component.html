@@ -1,0 +1,103 @@
+<div class="grid-1">
+  <app-card
+    titulo="Trabajos Programados"
+    descripcion="Trabajos Programados"
+    imagenSrc="assets/img/slide-2.jpg"
+    colorCls="primary"
+  ></app-card>
+
+  <app-card
+    titulo="Comunicate"
+    descripcion="Nuestras vías de comunicación y las oficinas de tu localidad"
+    imagenSrc="assets/img/slide-3.jpg"
+    colorCls="tertiary"
+  ></app-card>
+
+  <app-card
+    titulo="Oficina Virtual"
+    descripcion="Todas las gestiones en un sólo lugar"
+    imagenSrc="assets/img/slide-4.jpg"
+    [hovereable]="false"
+    colorCls="secondary"
+  ></app-card>
+
+  <div class="login-form-content">
+    <form
+      nz-form
+      [formGroup]="validateForm"
+      class="login-form"
+      (ngSubmit)="submitForm()"
+    >
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input
+              type="text"
+              nz-input
+              formControlName="userName"
+              placeholder="Correo Electronico"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input
+              type="password"
+              nz-input
+              formControlName="password"
+              placeholder="Contraseña"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <button
+        nz-button
+        class="login-form-button login-form-margin"
+        [nzType]="'primary'"
+      >
+        Ingresar
+      </button>
+      O
+      <a>Registrarse!</a>
+    </form>
+  </div>
+</div>
+
+<div class="grid-2">
+  <app-card
+    titulo="Tarifas"
+    descripcion="Facturación y Tarifas"
+    imagenSrc="assets/img/slide-1.png"
+    colorCls="tertiary"
+  ></app-card>
+
+  <app-card
+    titulo="Impresión de Facturas"
+    descripcion="Tu factura detallada y clara, para poder abonarla"
+    imagenSrc="assets/img/slide-2.jpg"
+    colorCls="secondary"
+  ></app-card>
+
+  <app-card
+    titulo="Electrodependientes"
+    descripcion="Trámite para obtener la provisión gratuita de luz en el domicilio, por cuestiones de salud"
+    imagenSrc="assets/img/slide-3.jpg"
+    colorCls="primary"
+  ></app-card>
+
+  <app-card
+    titulo="Programa ERA"
+    descripcion="Energía Renovable para el Ambiente"
+    imagenSrc="assets/img/slide-4.jpg"
+    colorCls="tertiary"
+  ></app-card>
+
+  <app-card
+    titulo="Calidad de Servicio"
+    descripcion="Informe estadístico mensual"
+    imagenSrc="assets/img/slide-2.jpg"
+    colorCls="secondary"
+  ></app-card>
+</div>

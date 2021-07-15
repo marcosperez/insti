@@ -1,0 +1,24 @@
+<nz-card
+  [nzCover]="coverTemplate"
+  [nzBorderless]="true"
+  [nzHoverable]="hovereable"
+  [class]="classColor"
+  style="color: white"
+>
+  <nz-card-meta
+    [nzTitle]="titleTemplate"
+    [nzDescription]="titleDescripcion"
+  ></nz-card-meta>
+</nz-card>
+
+<ng-template #coverTemplate>
+  <img class="imagen-cover" alt="example" [src]="imagenSrc" />
+</ng-template>
+
+<ng-template #titleTemplate>
+  <div style="color: white; font-weight: 600" [innerHTML]="titulo"></div>
+</ng-template>
+
+<ng-template #titleDescripcion>
+  <div style="color: white" [innerHTML]="descripcion"></div>
+</ng-template>

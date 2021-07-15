@@ -1,0 +1,24 @@
+nz-card {
+  height: 300px;
+  background-color: var(--background-color-menu, white);
+
+  color: white !important;
+
+  &.card-epe {
+    &.primary {
+      background-color: var(--primary-color);
+    }
+
+    &.secondary {
+      background-color: var(--secondary-color);
+    }
+
+    &.tertiary {
+      background-color: var(--tertiary-color);
+    }
+  }
+}
+
+.imagen-cover {
+  height: 150px;
+}

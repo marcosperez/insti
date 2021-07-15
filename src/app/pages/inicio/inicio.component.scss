@@ -1,0 +1,32 @@
+.grid-1 {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-gap: 5px;
+}
+
+.grid-2 {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 5px;
+}
+
+.login-form-content {
+  display: flex;
+  background-color: white;
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-form {
+  width: 300px;
+  padding: 1em;
+  margin: auto;
+}
